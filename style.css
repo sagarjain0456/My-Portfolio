@@ -1,0 +1,148 @@
+* {
+  /* box-sizing: border-box; */
+  padding:0px;
+  margin:0px;
+}
+#navbar{
+  border: 2px solid orange;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#mid-navbar{
+  border: 2px solid orange;
+  width:40vw;
+  display: flex;
+  justify-content: space-between;
+}
+#Sagar-Navbar{
+  font-size: 2.5vw;
+  padding-left: 30px;
+}
+#gar-navbar{
+  color:orange;
+}
+#mid-navbar{
+  font-size: 1.5vw;
+}
+#home-navbar{
+  text-decoration: none;
+}
+#home-navbar{
+  text-decoration: none;
+}
+#about-navbar{
+  text-decoration: none;
+}
+#service-navbar{
+  text-decoration: none;
+}
+#work-navbar{
+  text-decoration: none;
+}
+#resume-navbar{
+  text-decoration: none;
+}
+#contact-navbar{
+  font-size: 1.5vw;
+  padding-right: 30px;
+  text-decoration: none;
+}
+
+#menu-icon{
+  height:9vw;
+  width:9vw;
+  display:none;
+  position: absolute;
+  top:0px;
+  left:0px;
+}
+
+#menu-cross-icon{
+  height:8vw;
+  width:8vw;
+  position: absolute;
+  top:5px;
+  left:5px;
+  display: none;
+
+}
+
+
+/* media query for navbar font */
+@media only screen and (max-width:1100px) {
+  #Sagar-Navbar{
+    font-size: 3.5vw;
+    padding-left: 30px;
+  }
+  #mid-navbar{
+    font-size: 2vw;
+      width:50vw;
+  }
+  #contact-navbar{
+    font-size: 2vw;
+  }
+}
+
+/* media query for navbar font */
+@media only screen and (max-width:800px) {
+  #Sagar-Navbar{
+    font-size: 4.5vw;
+    padding-left: 10px;
+  }
+  #mid-navbar{
+    font-size: 2.5vw;
+      width:60vw;
+  }
+  #contact-navbar{
+    font-size: 2.5vw;
+    padding-right: 10px;
+  }
+}
+
+/* media query for mobile view */
+@media only screen and (max-width:600px) {
+  #mid-navbar{
+    font-size: 5vw;
+    padding:10px;
+    flex-direction: column;
+    position: absolute;
+    top:0px;
+    left:-500px;
+    height:100vh;
+    justify-content:flex-start;
+    background-color: black;
+  }
+  #home-navbar{
+    padding-top: 100px;
+    color:white;
+  }
+  #about-navbar{
+    padding-top: 50px;
+    color:white;
+  }
+  #service-navbar{
+    padding-top: 50px;
+    color:white;
+  }
+  #work-navbar{
+    padding-top: 50px;
+    color:white;
+  }
+  #resume-navbar{
+    padding-top: 50px;
+    color:white;
+  }
+  #Sagar-Navbar{
+    margin-left: 35vw;
+    font-size: 7vw;
+  }
+  #contact-navbar{
+    font-size: 4vw;
+  }
+  #menu-icon{
+    display: inline-block;
+  }
+
+
+}
