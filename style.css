@@ -1,17 +1,19 @@
-* {
-  /* box-sizing: border-box; */
+*{
   padding:0px;
   margin:0px;
+}
+
+body {
   background-color:#181818;
 }
 #navbar{
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 #mid-navbar{
-  border: 2px solid orange;
+  /* border: 2px solid orange; */
   width:40vw;
   display: flex;
   justify-content: space-between;
@@ -57,8 +59,8 @@
 }
 
 #menu-icon{
-  height:9vw;
-  width:9vw;
+  height:8vw;
+  width:15vw;
   display:none;
   position: absolute;
   top:0px;
@@ -76,14 +78,16 @@
 }
 
 #my-pic{
-  width:400px;
-  height:400px;
+  width:500px;
+  height:600px;
 }
 #name-and-my-pic{
   display: flex;
   justify-content: space-around;
+  /* align-items: center; */
 }
 #my-name{
+  margin-top: 120px;
   font-size: 4vw;
   color:white;
 }
@@ -95,15 +99,16 @@
 }
 #fullstack{
   color:orange;
+  display: inline-block;
   position: relative;
+  font-size: 32px;
 }
 
 #fullstack::after{
-  content: '|';
-  position: absolute;
-  right:0;
-  color:orange;
+  content:'|';
   background-color: #181818;
+    position: absolute;
+    right:0;
   width:100%;
   animation:typing 2s infinite;
 }
@@ -113,8 +118,96 @@
   }
 }
 
+#about-me-heading{
+  color:white;
+  font-size: 40px;
+}
 
+#about-me-para{
+  color:white;
+  font-size: 25px;
+  margin-left: 40px;
+  margin-right: 40px;
+}
 
+#about-me{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#more {display: none;}
+
+#about-me-read-more-btn{
+ padding: 7px;
+  border-radius: 5px;
+  background-color: #50C878;
+  color:black;
+  cursor: pointer;
+}
+
+#Skills-Education-topdiv{
+  color:white;
+  display: flex;
+  border:2px solid orange;
+      width: 60vw;
+  font-weight: bold;
+  justify-content: space-around;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+.about-me-link{
+  position: relative;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.about-me-link::after{
+  content: '';
+  width:0;
+  height:2px;
+  background: #ff004f;
+  position: absolute;
+  left:0;
+  bottom: -8px;
+  transition:0.5s;
+}
+
+.about-me-link.active-link::after{
+  width:50%;
+}
+
+#about-me-skill-and-education-content{
+  border:2px solid orange;
+      width: 40vw;
+  display:flex;
+  flex-direction: column;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+#about-me-skill-content{
+  color:#ff004f;
+}
+
+#about-me-education-content{
+  display:none;
+}
+
+#about-me-achievements-content{
+  display: none;
+}
+
+.about-me-edu-content-heading-yr{
+  color:#ff004f;
+}
+
+.about-me-edu-content-para{
+  color:white;
+}
 
 
 
@@ -133,7 +226,7 @@
   }
 
   #my-name{
-    font-size: 6vw;
+    font-size: 5vw;
   }
 }
 
@@ -170,6 +263,7 @@
   #home-navbar{
     padding-top: 100px;
     color:white;
+
   }
   #about-navbar{
     padding-top: 50px;
@@ -196,6 +290,46 @@
   }
   #menu-icon{
     display: inline-block;
+  }
+
+#Skills-Education-topdiv{
+width:90vw;
+justify-content: space-between;
+}
+
+#about-me-skill-and-education-content{
+  width:90vw;
+}
+
+#about-me-para{
+  font-size: 20px;
+}
+
+
+}
+
+/* media query at 950px for my image and text column view */
+@media only screen and (max-width:950px) {
+   #name-and-my-pic{
+    flex-direction: column;
+  }
+
+  #my-pic {
+    width: 55vw;
+    height: 60vw;
+}
+
+  #my-name {
+      margin-top: 10px;
+      font-size: 9vw;
+  }
+
+  #fullstack{
+    font-size:5vw;
+  }
+
+  #name-and-my-pic {
+   align-items: center;
   }
 
 
