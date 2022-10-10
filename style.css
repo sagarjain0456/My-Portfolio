@@ -284,8 +284,83 @@ body {
   margin-top: -10px;
 }
 
+#my-work-heading{
+  color:white;
+  font-size: 30px;
+  border:2px solid orange;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#hover-click-heading{
+  color:#900000 ;
+  font-size: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+#man-on-computer-gif{
+  height:230px;
+  width:300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#man-gif-div{
+  text-align: center;
+}
+
+#Work-hover-heading-image-div{
+  display: flex;
+  flex-direction: column;
+  border:2px solid orange;
+  justify-content:center;
+}
 
 
+
+
+#work1-img{
+  height:15vw;
+  width:15vw;
+  transition: transform .2s;
+}
+#work2-img{
+  height:15vw;
+  width:15vw;
+  transition: transform .2s;
+}
+#work3-img{
+  height:15vw;
+  width:15vw;
+  transition: transform .2s;
+}
+#work4-img{
+  height:15vw;
+  width:15vw;
+  transition: transform .2s;
+}
+
+  #work1-img:hover {
+    transform: scale(2);
+  }
+  #work2-img:hover {
+    transform: scale(2);
+  }
+  #work3-img:hover {
+    transform: scale(2);
+  }
+  #work4-img:hover {
+    transform: scale(2);
+  }
+
+  #work-images-div{
+    border:2px solid orange;
+  display:flex;
+  /* justify-content: center; */
+  justify-content: space-around;
+  }
 
 
 /* first media query for navbar font */
@@ -408,22 +483,28 @@ justify-content: space-between;
 
 #ecommerce-website {
     height: 30vw;
-    width: 40vw;
+    width: 90vw;
     font-size: 2.5vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #portfolio-website {
     height: 30vw;
-    width: 40vw;
+    width: 90vw;
     margin-top: 40px;
     font-size: 2.5vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #blog-website {
     height: 30vw;
-    width: 40vw;
+    width: 90vw;
     margin-top: 40px;
     font-size: 2.5vw;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #portfolio-website:hover  {
