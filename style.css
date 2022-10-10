@@ -55,7 +55,6 @@ body {
   padding-right: 30px;
   text-decoration: none;
   color:white;
-
 }
 
 #menu-icon{
@@ -84,7 +83,6 @@ body {
 #name-and-my-pic{
   display: flex;
   justify-content: space-around;
-  /* align-items: center; */
 }
 #my-name{
   margin-top: 120px;
@@ -180,7 +178,7 @@ body {
 
 #about-me-skill-and-education-content{
   border:2px solid orange;
-      width: 40vw;
+  width: 40vw;
   display:flex;
   flex-direction: column;
   margin-left: auto;
@@ -209,6 +207,85 @@ body {
   color:white;
 }
 
+#my-services-heading{
+  color:white;
+  font-size: 25px;
+  border:2px solid orange;
+  width:130px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#my-services-divs{
+  display: flex;
+  border: 2px solid orange;
+  justify-content: space-around;
+  margin-top: 10px;
+}
+
+#ecommerce-website{
+  height:15vw;
+  width:20vw;
+  background-color: 	#900000 ;
+  color:white;
+  box-shadow: 10px 10px 5px 0 black;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  transition: 0.5s;
+}
+
+#ecommerce-website:hover  {
+  margin-top: -10px;
+}
+
+
+#portfolio-website{
+  height:15vw;
+  width:20vw;
+  background-color:#900000 ;
+  color:white;
+  box-shadow: 10px 10px 5px 0 black;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+    font-size: 1.2vw;
+  transition: 0.5s;
+}
+
+
+#portfolio-website:hover  {
+  margin-top: -10px;
+}
+
+
+#blog-website{
+  height:15vw;
+  width:20vw;
+  background-color:#900000 ;
+  color:white;
+  box-shadow: 10px 10px 5px 0 black;
+  border-radius: 20px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2vw;
+  transition: 0.5s;
+}
+
+
+#blog-website:hover  {
+  margin-top: -10px;
+}
+
+
+
 
 
 /* first media query for navbar font */
@@ -228,6 +305,26 @@ body {
   #my-name{
     font-size: 5vw;
   }
+
+  #ecommerce-website {
+   height:20vw;
+   width:25vw;
+   font-size: 1.5vw;
+  }
+
+  #portfolio-website {
+    height:20vw;
+    width:25vw;
+    font-size: 1.5vw;
+  }
+
+ #blog-website{
+   height:20vw;
+   width:25vw;
+   font-size: 1.5vw;
+ }
+
+
 }
 
 /* media query for navbar font */
@@ -263,7 +360,6 @@ body {
   #home-navbar{
     padding-top: 100px;
     color:white;
-
   }
   #about-navbar{
     padding-top: 50px;
@@ -305,6 +401,32 @@ justify-content: space-between;
   font-size: 20px;
 }
 
+#my-services-divs {
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+#ecommerce-website {
+    height: 30vw;
+    width: 40vw;
+    font-size: 2.5vw;
+}
+
+#portfolio-website {
+    height: 30vw;
+    width: 40vw;
+    margin-top: 20px;
+    font-size: 2.5vw;
+}
+
+#blog-website {
+    height: 30vw;
+    width: 40vw;
+    margin-top: 20px;
+    font-size: 2.5vw;
+}
+
+
 
 }
 
@@ -331,6 +453,4 @@ justify-content: space-between;
   #name-and-my-pic {
    align-items: center;
   }
-
-
 }

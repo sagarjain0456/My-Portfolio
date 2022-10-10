@@ -14,7 +14,6 @@ function aboutMeReadMore() {
   var dots = document.getElementById("dots");
   var moreText = document.getElementById("more");
   var btnText = document.getElementById("about-me-read-more-btn");
-
   if (dots.style.display === "none") {
     dots.style.display = "inline";
     btnText.innerHTML = "Read more";
@@ -26,12 +25,10 @@ function aboutMeReadMore() {
   }
 }
 
-
 function EducationClicked(){
   document.getElementById('about-me-education-content').style.display = 'block';
   document.getElementById('about-me-skill-content').style.display = 'none';
-    document.getElementById('about-me-achievements-content').style.display = 'none';
-
+  document.getElementById('about-me-achievements-content').style.display = 'none';
   var skillsHeadingElement = document.getElementById("skills-heading");
   skillsHeadingElement.classList.remove("active-link");
   var educationHeadingElement = document.getElementById("education-heading");
@@ -52,12 +49,10 @@ function SkillsClicked(){
   achievementsHeadingElement.classList.remove("active-link");
 }
 
-
 function AchievementsClicked(){
   document.getElementById('about-me-achievements-content').style.display = 'block';
   document.getElementById('about-me-skill-content').style.display = 'none';
   document.getElementById('about-me-education-content').style.display = 'none';
-
   var achievementsHeadingElement = document.getElementById("achievements-heading");
   achievementsHeadingElement.classList.add("active-link");
   var educationHeadingElement = document.getElementById("education-heading");
