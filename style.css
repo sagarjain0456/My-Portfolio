@@ -515,6 +515,18 @@ justify-content: space-between;
   margin-top: 40px;
 }
 
+#work1-img{
+  height:20vw;
+  width:25vw;
+}
+#work2-img{
+  height:20vw;
+  width:25vw;
+}
+#work3-img{
+  height:20vw;
+  width:25vw;
+}
 
 
 }
