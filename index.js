@@ -37,7 +37,7 @@ function EducationClicked(){
   achievementsHeadingElement.classList.remove("active-link");
 }
 
-function SkillsClicked(){
+function SkillsClicked() {
   document.getElementById('about-me-skill-content').style.display = 'block';
   document.getElementById('about-me-education-content').style.display = 'none';
   document.getElementById('about-me-achievements-content').style.display = 'none';
@@ -49,7 +49,7 @@ function SkillsClicked(){
   achievementsHeadingElement.classList.remove("active-link");
 }
 
-function AchievementsClicked(){
+function AchievementsClicked() {
   document.getElementById('about-me-achievements-content').style.display = 'block';
   document.getElementById('about-me-skill-content').style.display = 'none';
   document.getElementById('about-me-education-content').style.display = 'none';
@@ -59,4 +59,15 @@ function AchievementsClicked(){
   educationHeadingElement.classList.remove("active-link");
   var skillsHeadingElement = document.getElementById("skills-heading");
   skillsHeadingElement.classList.remove("active-link");
+}
+
+function loadMoreBtnClicked() {
+  var getloadMorebtn = document.getElementById('load-more');
+  if (getloadMorebtn.innerHTML === "Load more") {
+    document.getElementById('second-work-images-div').style.display = 'flex';
+    getloadMorebtn.innerHTML = "Load less";
+  } else {
+    document.getElementById('second-work-images-div').style.display = 'none';
+    getloadMorebtn.innerHTML = "Load more";
+  }
 }
