@@ -470,6 +470,7 @@ body {
   border-radius: 10px;
   margin-top: 10px;
   display:block;
+  cursor: pointer;
 }
 
 #left-portion-whole-contact-section {
@@ -501,6 +502,7 @@ body {
 
 #Entire-right-portion-for-submit-form {
   margin-right: 30px;
+  cursor: pointer;
 }
 
 #submit-form {
@@ -510,6 +512,7 @@ body {
   width: 110px;
   border-radius: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 #textarea {
